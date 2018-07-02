@@ -5,10 +5,7 @@
 \RequirePackage{kvoptions}
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
-% \RequirePackage{xepersian}
 
-\DeclareStringOption[XBNiloofar]{persianFont}
-\DeclareStringOption[Times]{latinFont}
 \DeclareStringOption[logo.png]{logo}
 \DeclareDefaultOption{\PassOptionsToClass{\CurrentOption}{report}}
 \ProcessKeyvalOptions*
@@ -17,11 +14,8 @@
 
 
 \AtBeginDocument{
-    \settextfont{\tehranReport@persianFont}
-    \setlatintextfont{\tehranReport@latinFont}
     \let\thetitle\@title
     \let\theauthor\@author
-    % \let\theuniversity\@title
 
     \pagestyle{fancy}
     \fancyhf{}
@@ -43,11 +37,9 @@
             {\rule{0.6\textwidth}{0.5pt}\par}
             \vskip 6em%
             {\Huge \bfseries \@title \par}%
-            % \vskip 1.5em%
             {\rule{0.8\textwidth}{1pt}\par}
             {\Large \thecourse \par}%
             \vskip 3em%
-            % \lineskip .75em%
             {\LARGE \@author \par}%
             \vskip 0.5em%
             {\large \theauthorposition \par}%
