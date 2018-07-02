@@ -50,7 +50,7 @@
             % \lineskip .75em%
             {\LARGE \@author \par}%
             \vskip 0.5em%
-            {\large دانشجوی کارشناسی مهندسی کامپیوتر~-~نرم‌افزار \par}%
+            {\large \theauthorposition \par}%
             \vskip 0.5em%
             {\normalsize \thestudentnumber \par}%
             \vskip 1.5em%
