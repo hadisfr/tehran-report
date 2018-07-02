@@ -5,7 +5,7 @@ image: blang/latex
 
 build:
   script:
-    xelatex -pdf -xelatex example.tex
+    latexmk -xelatex example.tex
   artifacts:
     paths:
       - "*.pdf"
