@@ -46,7 +46,7 @@
             \vskip 0.5em%
             {\normalsize \thestudentnumber \par}%
             \vskip 1.5em%
-            {\large \bfseries استاد راهنما \par}%
+            {\large \bfseries استاد \par}%
             \vskip 0.5em%
             {\large \thesupervisor \par}%
             \vskip 3em%
