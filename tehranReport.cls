@@ -5,6 +5,7 @@
 \RequirePackage{kvoptions}
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
+\RequirePackage{hyperref}
 
 \DeclareStringOption[logo.png]{logo}
 \DeclareDefaultOption{\PassOptionsToClass{\CurrentOption}{report}}
@@ -20,6 +21,10 @@
     \pagestyle{fancy}
     \fancyhf{}
     \chead{\thecourse\quad{\bfseries \thetitle}\dotfill\thepage}
+
+    \hypersetup{pdftitle=\thetitle}
+    \hypersetup{pdfauthor=\theauthor}
+    \hypersetup{pdfsubject={\thecourse{} :: \thetitle{}}}
 }
 
 \newcommand{\maketitlepage}{
