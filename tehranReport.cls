@@ -41,7 +41,7 @@
             {\Large \bfseries \theuniversity \par}%
             {\large \thecollege \par}%
             {\rule{0.6\textwidth}{0.5pt}\par}
-            \vskip 9em%
+            \vskip 6em%
             {\Huge \bfseries \@title \par}%
             % \vskip 1.5em%
             {\rule{0.8\textwidth}{1pt}\par}
@@ -50,7 +50,9 @@
             % \lineskip .75em%
             {\LARGE \@author \par}%
             \vskip 0.5em%
-            {\large \thestudentnumber \par}%
+            {\large دانشجوی کارشناسی مهندسی کامپیوتر~-~نرم‌افزار \par}%
+            \vskip 0.5em%
+            {\normalsize \thestudentnumber \par}%
             \vskip 1.5em%
             {\large \bfseries استاد راهنما \par}%
             \vskip 0.5em%
@@ -78,6 +80,7 @@
 \newcommand{\university}[1]{\def\theuniversity{#1}}
 \newcommand{\college}[1]{\def\thecollege{#1}}
 \newcommand{\studentNumber}[1]{\def\thestudentnumber{#1}}
+\newcommand{\authorPosition}[1]{\def\theauthorposition{#1}}
 \newcommand{\course}[1]{\def\thecourse{#1}}
 \newcommand{\supervisor}[1]{\def\thesupervisor{#1}}
 
