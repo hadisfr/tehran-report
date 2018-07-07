@@ -18,9 +18,20 @@
     \let\thetitle\@title
     \let\theauthor\@author
 
+    % setup fancyhdr
     \pagestyle{fancy}
     \fancyhf{}
     \chead{\thecourse\quad{\bfseries \thetitle}\dotfill\thepage}
+
+    % setup fancyref
+    \def\reftextfaceafter {در صفحهٔ \reftextvario{مقابل}{بعد}}%
+    \def\reftextfacebefore{در صفحهٔ \reftextvario{مقابل}{قبل}}%
+    \def\reftextafter     {در صفحهٔ \reftextvario{بعد}{بعد}}%
+    \def\reftextbefore    {در صفحهٔ \reftextvario{قبل}{قبل}}%
+    \def\reftextcurrent   {در \reftextvario{همین صفحه}{صفحهٔ جاری}}%
+    \def\reftextfaraway#1{در صفحهٔ~\pageref{#1}}%
+    \def\reftextpagerange#1#2{در صفحهٔ~\pageref{#1}--\pageref{#2}}%
+    \def\reftextlabelrange#1#2{\ref{#1} to~\ref{#2}}%
 
     \hypersetup{pdftitle=\thetitle}
     \hypersetup{pdfauthor=\theauthor}
