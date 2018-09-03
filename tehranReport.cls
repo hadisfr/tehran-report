@@ -5,6 +5,7 @@
 \RequirePackage{kvoptions}
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
+\RequirePackage{tocbibind}
 \RequirePackage{hyperref}
 
 \DeclareStringOption[logo.png]{logo}
